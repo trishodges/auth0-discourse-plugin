@@ -16,7 +16,6 @@
           params: {
               scope: 'openid email nickname'
           },
-          redirectUrl:  Discourse.SiteSettings.auth0_callback_url,
           responseType: 'code'
       },
       languageDictionary: {
@@ -44,6 +43,8 @@
 
       var client_id = Discourse.SiteSettings.auth0_client_id;
       var domain = Discourse.SiteSettings.auth0_domain;
+
+      options.auth.redirectUrl = Discourse.SiteSettings.auth0_callback_url;
 
       lock = new Auth0Lock(client_id, domain, options);
 
