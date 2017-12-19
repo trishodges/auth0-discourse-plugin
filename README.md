@@ -24,7 +24,7 @@ This is a [Discourse](http://discourse.org) plugin to do Single Sign On using Au
 
 -  Edit your `containers/app.yml` to include this under `hooks > after_code > exec > cmd`:
 
-        - git clone https://github.com/auth0/discourse-plugin.git auth0
+        - git clone https://github.com/quantrocket-llc/auth0-discourse-plugin.git auth0
 
 -  Follow the rest of the tutorial
 

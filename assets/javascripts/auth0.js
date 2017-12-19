@@ -9,7 +9,24 @@
 
   var lock;
 
-  var script_url = '//cdn.auth0.com/js/lock-9.2.js';
+  var script_url = '//cdn.auth0.com/js/lock/10.6/lock.min.js';
+
+  var options = {
+      auth: {
+          params: {
+              scope: 'openid email nickname'
+          }
+      },
+      languageDictionary: {
+          title: "QuantRocket"
+      },
+      theme: {
+          logo: '/logo.png',
+          primaryColor: '#777'
+      },
+      socialButtonStyle: 'big',
+      allowSignUp: false
+  };
 
   appendScript(script_url, function () {
     var checkInterval = setInterval(function () {
@@ -26,7 +43,7 @@
       var client_id = Discourse.SiteSettings.auth0_client_id;
       var domain = Discourse.SiteSettings.auth0_domain;
 
-      lock = new Auth0Lock(client_id, domain);
+      lock = new Auth0Lock(client_id, domain, options);
 
     }, 300);
   });
