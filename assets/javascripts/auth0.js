@@ -15,7 +15,9 @@
       auth: {
           params: {
               scope: 'openid email nickname'
-          }
+          },
+          redirectUrl:  Discourse.SiteSettings.auth0_callback_url,
+          responseType: 'code'
       },
       languageDictionary: {
           title: "QuantRocket"
@@ -66,11 +68,7 @@
           return this._super();
         }
 
-        lock.show({
-          popup:        true,
-          responseType: 'code',
-          callbackURL:  Discourse.SiteSettings.auth0_callback_url
-        });
+        lock.show();
 
         this.controllerFor('login').resetForm();
       },
@@ -90,10 +88,7 @@
           }
         } else {
           lock.show({
-            mode:         'signup',
-            popup:        true,
-            responseType: 'code',
-            callbackURL:  Discourse.SiteSettings.auth0_callback_url
+            allowSignUp: true
           });
         }
       }
