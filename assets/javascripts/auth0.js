@@ -14,7 +14,7 @@
   var options = {
       auth: {
           params: {
-              scope: 'openid email nickname'
+              scope: 'openid email nickname name'
           },
           responseType: 'code'
       },
