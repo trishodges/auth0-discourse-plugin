@@ -22,8 +22,8 @@
           title: "QuantRocket"
       },
       theme: {
-          logo: '/uploads/default/original/1X/31e0bd65fe6d71c9874952bdfa8d69e144d6ad07.png',
-          primaryColor: '#777'
+          logo: '/uploads/default/original/1X/e38dac93baed4455d622fdc1811ed53011a3995c.png',
+          primaryColor: '#0375B4'
       },
       socialButtonStyle: 'big',
       allowSignUp: false
