@@ -19,7 +19,7 @@
           responseType: 'code'
       },
       languageDictionary: {
-          title: "QuantRocket"
+          title: "CredibleToken"
       },
       theme: {
           logo: '/uploads/default/original/1X/e38dac93baed4455d622fdc1811ed53011a3995c.png',
