@@ -22,7 +22,7 @@
           title: "CredibleToken"
       },
       theme: {
-          logo: '/uploads/default/original/1X/e38dac93baed4455d622fdc1811ed53011a3995c.png',
+          logo: '/uploads/default/original/1X/554ddd3bfb804f6e2c7aeb72260e6c4f8ebf410a.png',
           primaryColor: '#0375B4'
       },
       socialButtonStyle: 'big',
